@@ -1,0 +1,23 @@
+{
+  "name": "open-sauce",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mamaku-2018/open-sauce.git",
+  "author": "--unset-all <--unset-all>",
+  "license": "MIT",
+  "scripts": {
+    "debug": "nodemon --inspect index --ignore data.json",
+    "test": "jest --watchAll --noStackTrace",
+    "start": "node index"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "jest": "^23.1.0"
+  },
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "nodemon": "^1.17.5",
+    "supertest": "^3.1.0"
+  }
+}
