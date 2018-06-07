@@ -12,21 +12,19 @@ router.get('/cohort', (req, res) => {
       res.send('unable to read data file').status(500)
     } else {
       const peeps = JSON.parse(data)
-      console.log(peeps)
       res.render('./templates/cohort', peeps)
     }
   })
 })
 
 router.get('/profile/:id', (req, res) => {
-  const id = Number(req.params.id)
+  const id = req.params.id
   getData((err, data) => {
     if (err) {
       res.send('unable to read data file').status(500)
     } else {
       const peeps = JSON.parse(data)
       const person = peeps.peeps.find(peep => peep.id === id)
-
       res.render('./templates/profile', person)
     }
   })

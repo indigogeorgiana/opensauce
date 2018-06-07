@@ -1,19 +1,15 @@
-
-  
-  {{>header}}
-  
-  {{>nav}}
-
-  {{>list}}
+ {{>header}} 
+ {{>nav}} 
+ {{>list}}
 
 <ul>
   {{#each peeps}}
-    <li>
-       <figure>
-  <img src="{{image}}" alt="The Pulpit Rock" width="250" height="150">
-  <figcaption>{{name}}</figcaption>
-</figure> 
-    
-    </li>
+  <li>
+    <figure>
+      <img src="{{image}}" alt="The Pulpit Rock" width="250" height="150">
+      <figcaption>{{name}}</figcaption>
+    </figure>
+
+  </li>
   {{/each}}
-  </ul>
+</ul>
