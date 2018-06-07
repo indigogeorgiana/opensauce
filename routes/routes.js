@@ -30,4 +30,8 @@ router.get('/profile/:id', (req, res) => {
   })
 })
 
+router.get('/add', (req, res) => {
+  res.render('./templates/addProfile')
+})
+
 module.exports = router
