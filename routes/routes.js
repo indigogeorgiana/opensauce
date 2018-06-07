@@ -7,13 +7,17 @@ router.get('/', (req, res) => {
 })
 
 router.get('/cohort', (req, res) => {
-  res.render('./templates/cohort')
-})
-router.get('/cohort', (req, res) => {
-  res.render('./templates/cohort')
+  getData((err, data) => {
+    if (err) {
+      res.send('unable to read data file').status(500)
+    } else {
+      const peeps = JSON.parse(data)
+      res.render('./templates/cohort', peeps)
+    }
+  })
 })
 
-router.get('/puppies/:id', (req, res) => {
+router.get('/profile/:id', (req, res) => {
   const id = Number(req.params.id)
   getData((err, data) => {
     if (err) {
