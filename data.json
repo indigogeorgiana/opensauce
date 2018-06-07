@@ -1,23 +1,25 @@
 {
   "peeps": [
     {
+      "id": "1",
       "name": "Sam",
       "short": "TheFace",
       "age": 29,
       "sauce": "Guacamole",
       "preferedP": "We, Us",
-      "mantra": "",
-      "favPets": "",
-      "children": "",
-      "hobbies": "",
+      "mantra": "Live Life, Love Life, make lemonade",
+      "favPets": "Dog's (but I love all really",
+      "children": "One day",
+      "hobbies": "Driving, computers, building and fixing .. most things, people",
       "code": "",
-      "color": "",
+      "color": "lilac",
       "movie": "",
-      "music": "",
-      "website": "",
+      "music": "All music depending on the required mood",
+      "website": "https://sam-by-name.github.io/",
       "personal": ""
     },
     {
+      "id": "2",
       "name": "Caitlyn",
       "short": "",
       "age": 26,
@@ -35,6 +37,7 @@
       "personal": "INFP/Pisces/Griffindor"
     },
     {
+      "id": "3",
       "name": "Bronwyn",
       "short": "Bron, B, Brown, B-ron, Bron Juan, Bronaldo",
       "age": 29,
@@ -52,6 +55,7 @@
       "personal": ":thinking_face: I'm adopted"
     },
     {
+      "id": "4",
       "name": "Cornelia Schulz",
       "short": "Connie",
       "age": "dinosaur",
@@ -69,6 +73,7 @@
       "personal": ""
     },
     {
+      "id": "5",
       "name": "Indigo Phillips",
       "short": "CandyGurl",
       "age": "30's",
