@@ -3,6 +3,7 @@
     {
       "id": "1",
       "name": "Sam",
+      "image": "https://avatars2.githubusercontent.com/u/37396830?s=400&u=664453ca7e4d6cbd6355e7d490d0bd2593aca52b&v=4",
       "short": "TheFace",
       "age": 29,
       "sauce": "Guacamole",
@@ -21,6 +22,7 @@
     {
       "id": "2",
       "name": "Caitlyn",
+      "image": "https://avatars2.githubusercontent.com/u/37396830?s=400&u=664453ca7e4d6cbd6355e7d490d0bd2593aca52b&v=4",
       "short": "",
       "age": 26,
       "sauce": "Mustard",
@@ -39,6 +41,7 @@
     {
       "id": "3",
       "name": "Bronwyn",
+      "image": "https://avatars2.githubusercontent.com/u/37396830?s=400&u=664453ca7e4d6cbd6355e7d490d0bd2593aca52b&v=4",
       "short": "Bron, B, Brown, B-ron, Bron Juan, Bronaldo",
       "age": 29,
       "sauce": "Young at heart",
@@ -76,6 +79,7 @@
     {
       "id": "5",
       "name": "Indigo Phillips",
+      "image": "https://avatars2.githubusercontent.com/u/37396830?s=400&u=664453ca7e4d6cbd6355e7d490d0bd2593aca52b&v=4",
       "short": "CandyGurl",
       "age": "30's",
       "sauce": "Sweet chilli",
