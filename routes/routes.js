@@ -29,6 +29,5 @@ router.get('/profile/:id', (req, res) => {
     }
   })
 })
-// router.get('/')
 
 module.exports = router
