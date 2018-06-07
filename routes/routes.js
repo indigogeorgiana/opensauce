@@ -18,7 +18,7 @@ router.get('/cohort', (req, res) => {
 })
 
 router.get('/profile/:id', (req, res) => {
-  const id = req.params.id
+  const id = Number(req.params.id)
   getData((err, data) => {
     if (err) {
       res.send('unable to read data file').status(500)
