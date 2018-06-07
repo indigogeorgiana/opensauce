@@ -1,0 +1,9 @@
+body {
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  background: url("./images/.jpg") no-repeat center center;
+
+}
