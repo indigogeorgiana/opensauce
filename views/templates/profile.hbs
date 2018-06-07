@@ -1,33 +1,6 @@
-
-
 <body>
-{{navprofile}}
-{{header}}
-<!--Name or nickname-->
-<p>Name: {{name}}</p>
-<p>Nickname: {{nickname}}</p>
-<!--Age-->
-<p>Age: {{age}}</p>
-<!--Favourite Sauce: If you were a favourite sauce what would you be?-->
-<p>What's you're favourite sauce? {{sauce}}</p>
-<!-- Your preffered Pronouns-->
-<p>Preferred Pronouns: {{pronouns}}</p>
-<!-- Personal Motto/Mantra-->
-<p>Motto/Mantra: {{motto}}</p>
-<!--Pets/favourite animals-->
-<p>Pets: {{pets}}</p>
-<!--Family/Number of children-->
-<p>Children: {{family}}</p>
-<!--Hobbies-->
-<p>Favourite Hobbies: {{hobbies}}</p>
-<!--Personal code: If you were a line of code what would you be?-->
-<p>Line of code that represents you? {{code}}</p>
-<!---Favourite colour-->
-<p>Favourite Colour: {{colour}}</p>
-<!--Favourite movie-->
-<p>Favourite Movie: {{movie}}</p>
-<!--Favourite type of music-->
-<p>Favourite Music: {{music}}</p>
-<!--Favourite website-->
-<p>Favourite Website: {{website}}</p>
+  {{>profile-nav}}
+  {{>profile-header}}
+  {{>profile-main}}
+  <footer>{{footer}}</footer>
 </body>
