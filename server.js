@@ -9,6 +9,8 @@ const hbsConfig = {
   defaultLayout: 'main',
   extname: 'hbs'
 }
+
+
 server.engine('hbs', hbs(hbsConfig))
 server.set('view engine', 'hbs')
 
