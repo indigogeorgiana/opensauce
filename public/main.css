@@ -1,17 +1,17 @@
 * {
   box-sizing: border-box;
-  border: 0.5px solid transparent;
+  border: 0.5px solid red;
 }
 
 body {
   width: 100%;
   font-family: 'Raleway', sans-serif;
-  background-size: cover;
-  height: 800px;
 }
 
 .landing-main {
   background: url("./images/spaghetti-sauce.jpg") no-repeat center center;
+  background-size: cover;
+  height: 1000px;
 }
 
 a {
@@ -78,7 +78,6 @@ nav {
 	top: 0;
 	left: 0;
   z-index: 100;
-  display: inline-block;
   background-color: white; 
 }
 
@@ -98,29 +97,21 @@ nav {
   height: 9rem;
   float: right;
   padding: 2rem;
-
-}
-.right-nav ul {
-  height: 5rem;
 }
 
-.right-nav:hover ul {
-  display: block;
-  z-index: 200;
+nav a {
+  color: black;
+  text-decoration: none;
 }
 
 nav ul, nav:active ul { 
-  display: inline-block;
-  position: absolute;
+  display: flex;
   list-style: none;
   text-transform: uppercase;
   font-weight: bold;
   padding: 0;
-  background: #fff;
-  border: 0.2rem solid black;
   right: 2.5rem;
   top: 6.5rem;
-  width: 40%;
 }
 
 nav li {
