@@ -19,24 +19,27 @@ test('test route to index', done => {
     })
 })
 
-test('test route / to /cohort', done => {
+test('test route to /cohort', done => {
   request(server)
     .get('/cohort')
     .end((err, res) => {
       const $ = cheerio.load(res.text)
-      const header = $('')
-      expect().toMatch('')
+      const div = $('h1').text()
+      expect(div).toMatch('Mamaku')
       done(err)
     })
 })
 
-// test('test route /cohort to /profile', done => {
-//   request(server)
-//     .get('/profile')
-//     .end((err, res) => {
-//       const $ = cheerio.load(res.text)
-//       const p = $('p').text()
-//       expect(p).toMatch('Name')
-//       done(err)
-//     })
-// })
+ test('test route to /profile', done => {
+   request(server)
+    .get('/profile')
+    .end((err, res) => {
+       const $ = cheerio.load(res.text)
+        const h5 = $('div').text()
+       expect(h5).toMatch('Contact')
+       done(err)
+    })
+})
+
+
+
