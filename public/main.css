@@ -252,4 +252,20 @@ header {
 
 a:hover#navicon {
   background-color: grey;
-  }
+}
+
+
+/* ADD PROFILE */
+
+.addProf {
+  margin-top: 13%;
+  background-image: url('images/fern1.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.addProf input[type="text"] {
+  color: black;
+  background-color: white;
+  width: 50%; 
+}
