@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  border: 0.5px solid red;
+  border: 0.5px solid transparent;
 }
 
 body {
@@ -75,7 +75,8 @@ input[type=submit]:hover {
 /* NAV */
 
 nav {
-	width: 100%;
+  width: 100%;
+  height: 15rem;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -96,9 +97,8 @@ nav {
 
 .right-nav {
   width: 50%;
-  height: 9rem;
   float: right;
-  padding: 2rem;
+  padding: 0;
 }
 
 nav a {
@@ -112,12 +112,10 @@ nav ul, nav:active ul {
   text-transform: uppercase;
   font-weight: bold;
   padding: 0;
-  right: 2.5rem;
-  top: 6.5rem;
 }
 
 nav li {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-align: left;
   width: 100%;
   padding: 2rem 0;
@@ -129,20 +127,30 @@ nav li {
 
 .cohort-main {
   width: 100%;
-  height: 80rem;
+  height: 100rem;
   background: url("./images/mamaku-fern.jpg") no-repeat left top;
-  margin-top: 20rem;
+  margin-top: 15rem;
 }
 
 .cohort-header {
-  width: 50%;
-  float: right;
-  margin-right: 5rem;
+  margin-top: 9rem;
+  width: 100%;
   text-align: center;
+  color: white;
+
+}
+
+.cohort-header h1, h2 {
+  font-weight: bold;
 }
 
 .cohort-list {
-  margin-top: 20rem;
+  width: 80%;
+  margin-top: 5rem;
+  margin: auto;
+  text-align: center;
+  color: white;
+  font-weight: bold;
 }
 
 .cohort-list li {
@@ -170,11 +178,13 @@ footer {
   position: relative;
   padding-left: 5rem;
   bottom: 0;
+  line-height: 1rem;
 }
 
 h5 {
   font-size: 18px;
 }
+
 
 /* PROFILE-HEADER */
 
@@ -232,4 +242,20 @@ h5 {
 
 a:hover#navicon {
   background-color: grey;
-  }
+}
+
+
+/* ADD PROFILE */
+
+.addProf {
+  margin-top: 13%;
+  background-image: url('images/fern1.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.addProf input[type="text"] {
+  color: black;
+  background-color: white;
+  width: 50%; 
+}

@@ -1,4 +1,6 @@
-<form class="addProf" action="/add" method="post">
+{{> cohort-nav}} 
+<div class="addProf">
+<form action="/add" method="post">
   <input placeholder="Add name here" type="text" name="name" >
   <input placeholder="Add image \"URL!!!\" here" type="text" name="image" >
   <input placeholder="Add nickname here" type="text" name="short" >
@@ -17,3 +19,6 @@
   <input placeholder="Enter card details here" type="text" name="money" >
   <input type="submit" name="" value="Submit">
 </form>
+</div>
+
+{{> footer}}
