@@ -258,5 +258,6 @@ a:hover#navicon {
 
 .addProf input[type="text"] {
   color: black;
+  background-color: white;
   width: 50%; 
 }
