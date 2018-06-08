@@ -10,7 +10,6 @@ const hbsConfig = {
   extname: 'hbs'
 }
 
-
 server.engine('hbs', hbs(hbsConfig))
 server.set('view engine', 'hbs')
 

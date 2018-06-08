@@ -36,12 +36,11 @@ router.get('/add', (req, res) => {
 })
 
 router.post('/add', (req, res) => {
-  console.log("hi")
   getData((err, data) => {
     if (err) {
       res.send('unable to read data file').status(500)
     } else {
-      const personData = JSON.parse(data)
+      let personData = JSON.parse(data)
       const id = personData.peeps.length + 1
       const newPerson = {
         id: id,
@@ -63,12 +62,12 @@ router.post('/add', (req, res) => {
         personal: req.body.personal
       }
       personData.peeps.push(newPerson)
-      addData(personData, (err) => {
+      personData = JSON.stringify(personData, null, 2)
+      addData(personData, (err, data) => {
         if (err) {
-          res.send('unable to save the file').status(500)
+          res.send('unable to save the file')
         } else {
-          console.log(personData)
-          res.render('./templates/cohort')
+          res.redirect('/cohort')
         }
       })
     }
