@@ -3,12 +3,6 @@ const cheerio = require('cheerio')
 const routes = require('../routes/routes')
 const server = require('../server')
 
-test('all systems go', (done) => {
-  expect(true).toBeTruthy()
-  done()
-})
-
-test('test route to index', done => {
   request(server)
     .get('/')
     .end((err, res) => {
