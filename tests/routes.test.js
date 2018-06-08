@@ -37,6 +37,7 @@ test('test route to /cohort', done => {
     })
 })
 
+
 test('GET profile add page form', done => {
   request(server)
     .get('/add')
@@ -48,6 +49,30 @@ test('GET profile add page form', done => {
       done()
     })
 })
+
+test('test route to add profile', done => {
+  request(server)
+   .get('/add')
+   .end((err, res) => {
+      const $ = cheerio.load(res.text)
+       const placeholder = $('<form><input placement="Add name here" type="text" name="name"/></form>').serializeArray()
+      
+       expect(placeholder).toMatch('')
+      done()
+   })
+})
+
+// test('GET puppies edit page form', done => {
+//   request(server)
+//     .get('/puppies/edit/1')
+//     .end((err, res) => {
+//       const $ = cheerio.load(res.text)
+//       const h1 = $('label').attr('for')
+//       console.log(h1)
+//       expect(h1).toMatch('name')
+//       done(err)
+//     })
+// })
 
 
 
