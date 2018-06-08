@@ -1,20 +1,26 @@
 * {
   box-sizing: border-box;
-  border: 0.5px solid transparent;
+  border: 0.5px solid red;
 }
 
 body {
   width: 100%;
   font-family: 'Raleway', sans-serif;
+}
+
+.landing-main {
   background: url("./images/spaghetti-sauce.jpg") no-repeat center center;
   background-size: cover;
-  height: 800px;
+  height: 1000px;
 }
 
 a {
 	color: black;
-    text-decoration: none;
+  text-decoration: none;
 }
+
+
+/* LANDING/LOGIN PAGE */
 
 .loginbox {
   width: 30%;
@@ -62,6 +68,108 @@ input[type=submit]:hover {
 }
 
 
+/* COHORT PAGE */
+
+/* NAV */
+
+nav {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+  z-index: 100;
+  background-color: white; 
+}
+
+.left-nav {
+  width: 50%;
+  float: left;
+  vertical-align: middle;
+  padding: 3rem;
+}
+
+.left-nav img {
+  width: 15rem;
+}
+
+.right-nav {
+  width: 50%;
+  height: 9rem;
+  float: right;
+  padding: 2rem;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+nav ul, nav:active ul { 
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0;
+  right: 2.5rem;
+  top: 6.5rem;
+}
+
+nav li {
+  font-size: 1.2rem;
+  text-align: center;
+  width: 100%;
+  padding: 2rem 0;
+  margin: 0;
+}
+
+
+/* COHORT MAIN */
+
+.cohort-main {
+  width: 100%;
+  background: url("./images/mamaku.jpg") no-repeat center center;
+}
+
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  background-color: white;
+  color: black;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+
+
+/* PROFILE PAGE */
+
+/* PROFILE-HEADER */
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: inline-block;
+  background-color: white; 
+}
+
+/* PROFILE HEADER IMAGE */
+
+.profile-header{
+  width: 100%;
+  margin-top: 8rem;
+  height: 40rem;
+  background-size: cover;
+  text-align: center;
+}
+
+
 /* MEDIA QUERIES
 
 
@@ -88,3 +196,15 @@ input[type=submit]:hover {
     justify-content: center;
   }
 } 
+
+#navicon {
+  width: 5rem;
+  height: 5rem;
+  background: url("../images/menu-icon.png") no-repeat center center;
+  float: right;
+  z-index: 100;
+}
+
+a:hover#navicon {
+  background-color: grey;
+  }

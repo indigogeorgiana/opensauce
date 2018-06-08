@@ -1,59 +1,45 @@
 const request = require('supertest')
 const cheerio = require('cheerio')
+const routes = require('../routes/routes')
 const server = require('../server')
 
-test('GET root route page', done => {
+test('all systems go', (done) => {
+  expect(true).toBeTruthy()
+  done()
+})
+
+test('test route to index', done => {
   request(server)
     .get('/')
     .end((err, res) => {
       const $ = cheerio.load(res.text)
-      const h1 = $('').text()
-      expect(h1).toMatch('')
+      const label = $('label[for=name]').text()
+      expect(label).toMatch('Name')
       done(err)
     })
 })
 
-test('GET profiles page', done => {
+test('test route to /cohort', done => {
   request(server)
-    .get(' ')
+    .get('/cohort')
     .end((err, res) => {
       const $ = cheerio.load(res.text)
-      const h1 = $(' ').text()
-      expect(h1).toMatch(' ')
+      const div = $('h1').text()
+      expect(div).toMatch('Mamaku')
       done(err)
     })
 })
 
-test('GET cohort page', done => {
-  request(server)
-    .get(' ')
+ test('test route to /profile', done => {
+   request(server)
+    .get('/profile')
     .end((err, res) => {
-      const $ = cheerio.load(res.text)
-      const h1 = $(' ').text()
-      expect(h1).toMatch(' ')
-      done(err)
+       const $ = cheerio.load(res.text)
+        const h5 = $('div').text()
+       expect(h5).toMatch('Contact')
+       done(err)
     })
 })
 
-test('GET edit profile page form', done => {
-  request(server)
-    .get(' ')
-    .end((err, res) => {
-      const $ = cheerio.load(res.text)
-      const h1 = $(' ').attr(' ')
-      console.log(h1)
-      expect(h1).toMatch(' ')
-      done(err)
-    })
-})
 
-test('POST to data json and redirect', done => {
-  request(server)
-    .post(' ')
-    .send(' ')
-    .end((err, res) => {
-      expect(res.statusCode).toBe(302)
-      expect(res.text).toBe('v ')
-      done(err)
-    })
-})
+
