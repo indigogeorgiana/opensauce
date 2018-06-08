@@ -2,6 +2,7 @@ const request = require('supertest')
 const cheerio = require('cheerio')
 const routes = require('../routes/routes')
 const server = require('../server')
+const getData = require('../getData')
 
 test('test index /', done => {
   request(server)
@@ -27,7 +28,7 @@ test('test route to /cohort', done => {
 
  test('test route to /profile', done => {
    request(server)
-    .get('/profile')
+    .get('/profile/1')
     .end((err, res) => {
        const $ = cheerio.load(res.text)
         const h5 = $('h5').text()
@@ -36,29 +37,18 @@ test('test route to /cohort', done => {
     })
 })
 
-test('test route to add profile', done => {
+test('GET profile add page form', done => {
   request(server)
-   .get('/add')
-   .end((err, res) => {
+    .get('/add')
+    .end((err, res) => {
       const $ = cheerio.load(res.text)
-       const placeholder = $('<form><input placement="Add name here" type="text" name="name"/></form>').serializeArray()
-      
-       expect(placeholder).toMatch('')
+      const add = $('input').attr('placeholder')
+      console.log(h1)
+      expect(add).toMatch('Add name here')
       done()
-   })
+    })
 })
 
-// test('GET puppies edit page form', done => {
-//   request(server)
-//     .get('/puppies/edit/1')
-//     .end((err, res) => {
-//       const $ = cheerio.load(res.text)
-//       const h1 = $('label').attr('for')
-//       console.log(h1)
-//       expect(h1).toMatch('name')
-//       done(err)
-//     })
-// })
 
 
 
