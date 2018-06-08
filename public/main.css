@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  border: 0.5px solid transparent;
 }
 
 body {
@@ -228,7 +227,7 @@ header {
 
 .addProf input[type="text"] {
   color: black;
-  background-color: grey;
+  background-color: rgb(255, 255, 255);
   width: 50%; 
 }
 

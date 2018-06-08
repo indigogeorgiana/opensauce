@@ -5,7 +5,7 @@
       "name": "Sam",
       "image": "https://avatars2.githubusercontent.com/u/36747880?s=400&u=f78304a2069ee6d14abdd9fee8a562bc83c6f238&v=4",
       "short": "TheFace",
-      "age": 29,
+      "age": "29",
       "sauce": "Guacamole",
       "preferedP": "We, Us",
       "mantra": "Live Life, Love Life, make lemonade",
@@ -17,7 +17,7 @@
       "movie": "",
       "music": "All music depending on the required mood",
       "website": "https://sam-by-name.github.io/",
-      "personal": ""
+      "mantr": "Live Life, Love Life, make lemonade"
     },
     {
       "id": 2,
@@ -26,7 +26,7 @@
       "short": "",
       "age": 26,
       "sauce": "Mustard",
-      "preferedP":  "She/her, they/them",
+      "preferedP": "She/her, they/them",
       "mantra": "",
       "favPets": "Cat - Ziggy",
       "children": "",
@@ -94,7 +94,24 @@
       "music": "Any and all",
       "website": "Audio Visual Animation Sites",
       "personal": "Driven and resourceful"
+    },
+    {
+      "id": 6,
+      "name": "Don",
+      "image": "https://avatars1.githubusercontent.com/u/228761?s=460&v=4",
+      "short": "Sensei",
+      "age": "21",
+      "sauce": "Sweet Sauce",
+      "preferedP": "He, him, they them ",
+      "mantr": " attempting the most positive impact possible while trying to figure out what that means",
+      "favPets": "Crazy Students",
+      "children": "2",
+      "hobbies": "Code, trail running",
+      "code": "",
+      "color": "",
+      "movie": "",
+      "music": "",
+      "website": ""
     }
   ]
 }
-
