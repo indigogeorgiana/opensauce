@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  border: 0.5px solid red;
+  border: 0.5px solid transparent;
 }
 
 body {
@@ -200,7 +200,7 @@ header {
   width: 60%;
   margin: auto;
   margin-top: 2rem;
-  margin-bottom: 5rem;
+  margin-bottom: 15rem;
   height: 40rem;
   background-size: cover;
   text-align: left;
@@ -213,7 +213,7 @@ header {
   border-radius: 50%;
   z-index: 200;
   float: right;
-  margin-right: 10rem;
+  margin-right: 20rem;
   border: 3px solid grey;
 }
 
