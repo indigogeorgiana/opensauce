@@ -1,16 +1,17 @@
-{{> nav}} 
+<body>
 
-<div class="cohort-main">
+{{> cohort-nav}} 
 
-  <div class="cohort-head">
-    <h1>Mamaku 2018</h1>
-    <h2>28th May-27th July</h2>
+  <div class="cohort-main">
+
+    {{> cohort-header}}
+
+    <div class="cohort-list"></div>
+      {{>list}}
+    </div>
+
   </div>
-
-  <div class="cohort-list"></div>
-    {{>list}}
-  </div>
-
-</div>
 
 {{> footer}}
+
+</body>
