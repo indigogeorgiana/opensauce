@@ -1,9 +1,113 @@
+* {
+  box-sizing: border-box;
+  border: 0.5px solid red;
+}
+
 body {
   width: 100%;
   font-family: 'Raleway', sans-serif;
+  background: url("./images/spaghetti-sauce.jpg") no-repeat center center;
+  background-size: cover;
+  height: 800px;
 }
 
-.container {
-  background: url("./images/.jpg") no-repeat center center;
+a {
+	color: black;
+    text-decoration: none;
+}
+
+/* NAV */
+
+header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+  z-index: 100;
+  display: inline-block;
+  background-color: white; 
+}
+
+.left-nav {
+  width: 50%;
+  float: left;
+  vertical-align: middle;
+  padding: 3rem;
+}
+
+.left-nav img {
+    width: 15rem;
+}
+
+.right-nav {
+    width: 50%;
+    height: 9rem;
+    float: right;
+    padding: 2rem;
 
 }
+.right-nav ul {
+    height: 5rem;
+}
+
+.right-nav:hover ul {
+  display: block;
+  z-index: 200;
+}
+
+nav ul, nav:active ul { 
+  display: inline-block;
+  position: absolute;
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0;
+  background: #fff;
+  border: 0.2rem solid black;
+  right: 2.5rem;
+  top: 6.5rem;
+  width: 40%;
+ 
+}
+
+nav li {
+  font-size: 1.2rem;
+  text-align: center;
+  width: 100%;
+  padding: 2rem 0;
+  margin: 0;
+}
+
+/* COHORT MAIN */
+
+.cohort-main {
+  width: 100%;
+  background: url("./images/mamaku.jpg") no-repeat center center;
+}
+
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  background-color: white;
+  color: black;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+/* MEDIA QUERIES */
+
+#navicon {
+  width: 5rem;
+  height: 5rem;
+  background: url("../images/menu-icon.png") no-repeat center center;
+  float: right;
+  z-index: 100;
+}
+
+a:hover#navicon {
+  background-color: grey;
+  }

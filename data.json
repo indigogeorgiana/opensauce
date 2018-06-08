@@ -1,9 +1,9 @@
 {
   "peeps": [
     {
-      "id": "1",
+      "id": 1,
       "name": "Sam",
-      "image": "https://avatars2.githubusercontent.com/u/37396830?s=400&u=664453ca7e4d6cbd6355e7d490d0bd2593aca52b&v=4",
+      "image": "https://avatars2.githubusercontent.com/u/36747880?s=400&u=f78304a2069ee6d14abdd9fee8a562bc83c6f238&v=4",
       "short": "TheFace",
       "age": 29,
       "sauce": "Guacamole",
@@ -20,9 +20,9 @@
       "personal": ""
     },
     {
-      "id": "2",
+      "id": 2,
       "name": "Caitlyn",
-      "image": "https://avatars2.githubusercontent.com/u/37396830?s=400&u=664453ca7e4d6cbd6355e7d490d0bd2593aca52b&v=4",
+      "image": "https://avatars1.githubusercontent.com/u/33507937?s=400&v=4",
       "short": "",
       "age": 26,
       "sauce": "Mustard",
@@ -39,9 +39,9 @@
       "personal": "INFP/Pisces/Griffindor"
     },
     {
-      "id": "3",
+      "id": 3,
       "name": "Bronwyn",
-      "image": "https://avatars2.githubusercontent.com/u/37396830?s=400&u=664453ca7e4d6cbd6355e7d490d0bd2593aca52b&v=4",
+      "image": "https://avatars3.githubusercontent.com/u/37050848?s=400&v=4",
       "short": "Bron, B, Brown, B-ron, Bron Juan, Bronaldo",
       "age": 29,
       "sauce": "Young at heart",
@@ -58,7 +58,7 @@
       "personal": ":thinking_face: I'm adopted"
     },
     {
-      "id": "4",
+      "id": 4,
       "name": "Cornelia Schulz",
       "image": "https://avatars2.githubusercontent.com/u/37396830?s=400&u=664453ca7e4d6cbd6355e7d490d0bd2593aca52b&v=4",
       "short": "Connie",
@@ -77,9 +77,9 @@
       "personal": ""
     },
     {
-      "id": "5",
+      "id": 5,
       "name": "Indigo Phillips",
-      "image": "https://avatars2.githubusercontent.com/u/37396830?s=400&u=664453ca7e4d6cbd6355e7d490d0bd2593aca52b&v=4",
+      "image": "https://avatars3.githubusercontent.com/u/36146995?s=400&v=4",
       "short": "CandyGurl",
       "age": "30's",
       "sauce": "Sweet chilli",

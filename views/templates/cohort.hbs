@@ -1,19 +1,16 @@
+{{> nav}} 
 
-  
-  {{>header}}
-  
-  {{>nav}}
+<div class="cohort-main">
 
-  {{>list}}
+  <div class="cohort-head">
+    <h1>Mamaku 2018</h1>
+    <h2>28th May-27th July</h2>
+  </div>
 
-<ul>
-  {{#each peeps}}
-    <li>
-       <figure>
-  <img src="{{image}}" alt="The Pulpit Rock" width="304" height="228">
-  <figcaption>Fig1. - A view of the pulpit rock in Norway.</figcaption>
-</figure> 
-    
-    </li>
-  {{/each}}
-  </ul>
+  <div class="cohort-list"></div>
+    {{>list}}
+  </div>
+
+</div>
+
+{{> footer}}
