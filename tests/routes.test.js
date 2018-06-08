@@ -2,6 +2,7 @@ const request = require('supertest')
 const cheerio = require('cheerio')
 const routes = require('../routes/routes')
 const server = require('../server')
+const getData = require('../getData')
 
 test('test index /', done => {
   request(server)
@@ -27,12 +28,25 @@ test('test route to /cohort', done => {
 
  test('test route to /profile', done => {
    request(server)
-    .get('/profile')
+    .get('/profile/1')
     .end((err, res) => {
        const $ = cheerio.load(res.text)
         const h5 = $('h5').text()
        expect(h5).toMatch('Contact')
        done()
+    })
+})
+
+
+test('GET profile add page form', done => {
+  request(server)
+    .get('/add')
+    .end((err, res) => {
+      const $ = cheerio.load(res.text)
+      const add = $('input').attr('placeholder')
+      console.log(h1)
+      expect(add).toMatch('Add name here')
+      done()
     })
 })
 
@@ -59,6 +73,7 @@ test('test route to add profile', done => {
 //       done(err)
 //     })
 // })
+
 
 
 
