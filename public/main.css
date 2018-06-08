@@ -5,6 +5,9 @@
 
 body {
   width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -116,7 +119,7 @@ nav ul, nav:active ul {
 
 nav li {
   font-size: 1.2rem;
-  text-align: center;
+  text-align: left;
   width: 100%;
   padding: 2rem 0;
   margin: 0;
@@ -125,9 +128,39 @@ nav li {
 
 /* COHORT MAIN */
 
+
 .cohort-main {
   width: 100%;
-  background: url("./images/mamaku.jpg") no-repeat center center;
+  height: 80rem;
+  background: url("./images/mamaku-fern.jpg") no-repeat left top;
+  margin-top: 20rem;
+}
+
+.cohort-header {
+  width: 50%;
+  float: right;
+  margin-right: 5rem;
+  text-align: center;
+}
+
+.cohort-list {
+  margin-top: 20rem;
+}
+
+
+.cohort-list li {
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  font-size: 3rem;
+}
+
+
+.cohort-list img {
+  width: 20rem;
+  height: auto;
+  border-radius: 50%;
+
 }
 
 
@@ -135,8 +168,12 @@ nav li {
 
 footer {
   width: 100%;
+  height: 10rem;
   background-color: white;
   color: black;
+  position: relative;
+  padding-left: 5rem;
+  bottom: 0;
 }
 
 h5 {
