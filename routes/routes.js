@@ -123,4 +123,8 @@ router.post('/edit/:id', (req, res) => {
   })
 })
 
+router.get('/gamez', (req, res) => {
+  res.render('./templates/gamez')
+})
+
 module.exports = router
