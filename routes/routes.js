@@ -127,4 +127,7 @@ router.get('/gamez', (req, res) => {
   res.render('./templates/gamez')
 })
 
+router.get('/calendar', (req, res) => {
+  res.render('./templates/calendar')
+})
 module.exports = router
