@@ -205,8 +205,6 @@ header {
   text-align: center;
 }
 
-<<<<<<< HEAD
-=======
 
 /* ADD PROFILE */
 
@@ -223,7 +221,6 @@ header {
   width: 50%; 
 }
 
->>>>>>> adf3ecf5dfc6ab4ab4e3719c0b004728ecf71df7
 
 /* MEDIA QUERIES
 /* tablet */
@@ -250,8 +247,6 @@ header {
   }
 } 
 
-<<<<<<< HEAD
-=======
 #navicon {
   width: 5rem;
   height: 5rem;
@@ -265,4 +260,3 @@ a:hover#navicon {
 }
 
 
->>>>>>> adf3ecf5dfc6ab4ab4e3719c0b004728ecf71df7
