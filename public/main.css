@@ -307,3 +307,11 @@ header {
   }
 } 
 
+.gamez {
+  margin-top:25%;
+  text-align: center;
+}
+.gamez img {
+  text-align: center;
+  border-radius: 15%;
+}
