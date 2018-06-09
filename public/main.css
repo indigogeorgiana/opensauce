@@ -1,10 +1,12 @@
 * {
   box-sizing: border-box;
-  /* border: 0.5px solid red; */
 }
 
 body {
   width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -67,11 +69,11 @@ input[type=button]:hover {
 
 
 /* COHORT PAGE */
-
 /* NAV */
 
 nav {
-	width: 100%;
+  width: 100%;
+  height: 15rem;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -92,9 +94,8 @@ nav {
 
 .right-nav {
   width: 50%;
-  height: 9rem;
   float: right;
-  padding: 2rem;
+  padding: 0;
 }
 
 nav a {
@@ -108,13 +109,11 @@ nav ul, nav:active ul {
   text-transform: uppercase;
   font-weight: bold;
   padding: 0;
-  right: 2.5rem;
-  top: 6.5rem;
 }
 
 nav li {
-  font-size: 1.2rem;
-  text-align: center;
+  font-size: 1.4rem;
+  text-align: left;
   width: 100%;
   padding: 2rem 0;
   margin: 0;
@@ -125,16 +124,58 @@ nav li {
 
 .cohort-main {
   width: 100%;
-  background: url("./images/mamaku.jpg") no-repeat center center;
+  height: 100rem;
+  background: url("./images/mamaku-fern.jpg") no-repeat left top;
+  margin-top: 15rem;
 }
 
+.cohort-header {
+  margin-top: 9rem;
+  width: 100%;
+  text-align: center;
+  color: white;
+
+}
+
+.cohort-header h1, h2 {
+  font-weight: bold;
+}
+
+.cohort-list {
+  width: 80%;
+  margin-top: 5rem;
+  margin: auto;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.cohort-list li {
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  font-size: 3rem;
+}
+
+
+.cohort-list img {
+  width: 20rem;
+  height: auto;
+  border-radius: 50%;
+
+}
 
 /* FOOTER */
 
 footer {
   width: 100%;
+  height: 10rem;
   background-color: white;
   color: black;
+  position: relative;
+  padding-left: 5rem;
+  bottom: 0;
+  line-height: 1rem;
 }
 
 h5 {
@@ -142,35 +183,54 @@ h5 {
 }
 
 
-
-/* PROFILE PAGE */
-
 /* PROFILE-HEADER */
 
 header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  display: inline-block;
-  background-color: white; 
+  width:100%;
+  height: 70rem;
+  background: url("../../images/bb.jpg") no-repeat left top;
+  margin-top: 10rem;
+  background-size: cover;
 }
 
-/* PROFILE HEADER IMAGE */
-
-.profile-header{
-  width: 100%;
-  margin-top: 8rem;
+.profile-main {
+  width: 60%;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 15rem;
   height: 40rem;
   background-size: cover;
-  text-align: center;
+  text-align: left;
+  font-size: 2rem;
+}
+
+.profile-pict img {
+  width: 30rem;
+  height: auto;
+  border-radius: 50%;
+  z-index: 200;
+  float: right;
+  margin-right: 20rem;
+  border: 3px solid grey;
+}
+
+/* ADD PROFILE */
+
+.addProf {
+  margin: 20rem 2rem 0 5rem;
+  background-image: url('images/fern1.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.addProf input[type="text"] {
+  color: black;
+  background-color: rgb(255, 255, 255);
+  width: 50%; 
 }
 
 
 /* MEDIA QUERIES
-
-
 /* tablet */
 @media only screen and (max-width: 850px) {
 

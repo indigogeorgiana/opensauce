@@ -1,59 +1,79 @@
 const request = require('supertest')
 const cheerio = require('cheerio')
+const routes = require('../routes/routes')
 const server = require('../server')
+const getData = require('../getData')
 
-test('GET root route page', done => {
+test('test index /', done => {
   request(server)
     .get('/')
     .end((err, res) => {
       const $ = cheerio.load(res.text)
-      const h1 = $('').text()
-      expect(h1).toMatch('')
-      done(err)
+      const label = $('label[for=name]').text()
+      expect(label).toMatch('Name')
+      done()
+    })
+  })
+  
+test('test route to /cohort', done => {
+  request(server)
+    .get('/cohort')
+    .end((err, res) => {
+      const $ = cheerio.load(res.text)
+      const div = $('h1').text()
+      expect(div).toMatch('MAMAKU 2018')
+      done()
     })
 })
 
-test('GET profiles page', done => {
-  request(server)
-    .get(' ')
+ test('test route to /profile', done => {
+   request(server)
+    .get('/profile/1')
     .end((err, res) => {
-      const $ = cheerio.load(res.text)
-      const h1 = $(' ').text()
-      expect(h1).toMatch(' ')
-      done(err)
+       const $ = cheerio.load(res.text)
+        const h5 = $('h5').text()
+       expect(h5).toMatch('Contact')
+       done()
     })
 })
 
-test('GET cohort page', done => {
-  request(server)
-    .get(' ')
-    .end((err, res) => {
-      const $ = cheerio.load(res.text)
-      const h1 = $(' ').text()
-      expect(h1).toMatch(' ')
-      done(err)
-    })
-})
 
-test('GET edit profile page form', done => {
+test('GET profile add page form', done => {
   request(server)
-    .get(' ')
+    .get('/add')
     .end((err, res) => {
       const $ = cheerio.load(res.text)
-      const h1 = $(' ').attr(' ')
+      const add = $('input').attr('placeholder')
       console.log(h1)
-      expect(h1).toMatch(' ')
-      done(err)
+      expect(add).toMatch('Add name here')
+      done()
     })
 })
 
-test('POST to data json and redirect', done => {
+test('test route to add profile', done => {
   request(server)
-    .post(' ')
-    .send(' ')
-    .end((err, res) => {
-      expect(res.statusCode).toBe(302)
-      expect(res.text).toBe('v ')
-      done(err)
-    })
+   .get('/add')
+   .end((err, res) => {
+      const $ = cheerio.load(res.text)
+       const placeholder = $('<form><input placement="Add name here" type="text" name="name"/></form>').serializeArray()
+      
+       expect(placeholder).toMatch('')
+      done()
+   })
 })
+
+// test('GET puppies edit page form', done => {
+//   request(server)
+//     .get('/puppies/edit/1')
+//     .end((err, res) => {
+//       const $ = cheerio.load(res.text)
+//       const h1 = $('label').attr('for')
+//       console.log(h1)
+//       expect(h1).toMatch('name')
+//       done(err)
+//     })
+// })
+
+
+
+
