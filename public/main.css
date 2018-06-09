@@ -315,3 +315,34 @@ header {
   text-align: center;
   border-radius: 15%;
 }
+
+
+/*---- Calendar----*/
+.container {
+  max-width: 100% !important;
+  width    : 100% !important;
+  margin: 0 4.5% !important;
+}
+.calTitle {
+  text-align: center;
+}
+.calendar {
+  width: 100%;
+  margin: auto !important;
+
+}
+.day {
+  width : 13% !important;
+  height: 50px;
+  border: 1px solid black;
+  margin-left: 0 !important;
+  text-align: center;
+  font-weight: bold;
+
+}
+.date {
+  width : 13% !important;
+  height: 150px;
+  border: 1px solid black;
+  margin-left: 0 !important;
+}
