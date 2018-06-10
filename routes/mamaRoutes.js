@@ -5,6 +5,17 @@ const addData = require('../addData.js')
 
 router.use(express.urlencoded({extended: false}))
 
+router.get('/', (req, res) => {
+  getData((err, data) => {
+    if (err) {
+      res.send('unable to read data file').status(500)
+    } else {
+      const peeps = JSON.parse(data)
+      res.render('./templates/mamaku', peeps)
+    }
+  })
+})
+
 router.post('/', (req, res) => {
   if ((req.body.userid === 'mamaku-2018') && (req.body.pswrd === 'academy')) {
     getData((err, data) => {
@@ -15,6 +26,8 @@ router.post('/', (req, res) => {
         res.render('./templates/mamaku', peeps)
       }
     })
+  } else {
+    res.render('/')
   }
 })
 
