@@ -121,6 +121,14 @@ router.post('/profile:id/edit', (req, res) => {
   })
 })
 
+router.get('/class-notes', (req, res) => {
+  res.render('./templates/classNotes')
+})
+
+router.get('/ideas', (req, res) => {
+  res.render('./templates/ideas')
+})
+
 
 
 module.exports = router
