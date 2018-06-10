@@ -12,12 +12,11 @@
       "favPets": "Dog's (but I love all really",
       "children": "One day",
       "hobbies": "Driving, computers, building and fixing .. most things, people",
-      "code": "",
+      "code": "if (you === me)  { return infinite love } else {return infinite love anyway }",
       "color": "lilac",
       "movie": "",
       "music": "All music depending on the required mood",
       "website": "https://sam-by-name.github.io/",
-      "personal": "Live Life, Love Life, make lemonade",
       "banner": "",
       "background": ""
     },
@@ -124,6 +123,25 @@
       "website": "",
       "banner": "",
       "background": ""
+    },
+    {
+      "id": 7,
+      "name": "John the Punisher",
+      "image": "https://i.imgur.com/jajWPT0.jpg",
+      "short": "Killa",
+      "age": "",
+      "sauce": "",
+      "preferedP": "",
+      "mantr": "",
+      "favPets": "",
+      "children": "",
+      "hobbies": "",
+      "code": "",
+      "color": "",
+      "movie": "",
+      "music": "",
+      "website": "",
+      "mantra": ""
     }
   ]
 }
