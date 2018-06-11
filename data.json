@@ -17,8 +17,10 @@
       "movie": "",
       "music": "All music depending on the required mood",
       "website": "https://sam-by-name.github.io/",
-      "banner": "https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fg6klk13VlOI%2Fmaxresdefault.jpg&f=1",
-      "background": "https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.thewallpapers.org%2Fphoto%2F36328%2Fblue-fractals.jpg&f=1"
+      "banner": "https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.thewallpapers.org%2Fphoto%2F36328%2Fblue-fractals.jpg&f=1",
+      "Lbanner": "",
+      "Rbanner": "",
+      "Botbanner": ""
     },
     {
       "id": 2,
@@ -39,7 +41,9 @@
       "website": "",
       "personal": "INFP/Pisces/Griffindor",
       "banner": "",
-      "background": ""
+      "Lbanner": "",
+      "Rbanner": "",
+      "Botbanner": ""
     },
     {
       "id": 3,
@@ -60,7 +64,9 @@
       "website": "Net-a-porter",
       "personal": "I'm adopted",
       "banner": "http://mixmag.net/assets/uploads/images/_fullX2/KENDRICK-LAMAR-NEW.jpg",
-      "background": ""
+      "Lbanner": "",
+      "Rbanner": "",
+      "Botbanner": ""
     },
     {
       "id": 4,
@@ -81,7 +87,9 @@
       "website": "Instagram",
       "personal": "",
       "banner": "",
-      "background": ""
+      "Lbanner": "",
+      "Rbanner": "",
+      "Botbanner": ""
     },
     {
       "id": 5,
@@ -102,7 +110,9 @@
       "website": "Audio Visual Animation Sites",
       "personal": "Driven and resourceful",
       "banner": "",
-      "background": ""
+      "Lbanner": "",
+      "Rbanner": "",
+      "Botbanner": ""
     },
     {
       "id": 6,
@@ -122,7 +132,9 @@
       "music": "",
       "website": "",
       "banner": "",
-      "background": ""
+      "Lbanner": "",
+      "Rbanner": "",
+      "Botbanner": ""
     },
     {
       "id": 7,
@@ -141,7 +153,9 @@
       "movie": "",
       "music": "",
       "website": "",
-      "mantra": ""
+      "Lbanner": "",
+      "Rbanner": "",
+      "Botbanner": ""
     }
   ]
 }

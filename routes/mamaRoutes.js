@@ -75,7 +75,9 @@ router.post('/add', (req, res) => {
         website: req.body.website,
         personal: req.body.personal,
         banner: req.body.banner,
-        background: req.body.background
+        Lbanner: req.body.Lbanner,
+        Rbanner: req.body.Rbanner,
+        Botbanner: req.body.Botbanner
       }
       personData.peeps.push(newPerson)
       personData = JSON.stringify(personData, null, 2)
@@ -128,7 +130,9 @@ router.post('/profile:id/edit', (req, res) => {
       peepsData.website = req.body.website
       peepsData.personal = req.body.personal
       peepsData.banner = req.body.banner
-      peepsData.background = req.body.background
+      peepsData.Lbanner = req.body.Lbanner
+      peepsData.Rbanner = req.body.Rbanner
+      peepsData.Botbanner = req.body.Botbanner
       personData = JSON.stringify(personData, null, 2)
       addData(personData, (err, data) => {
         if (err) {
