@@ -2,6 +2,7 @@ const express = require('express')
 const router = express.Router()
 const getData = require('../getData.js')
 const addData = require('../addData.js')
+const getCal = require('../getCalendar.js')
 
 router.use(express.urlencoded({extended: false}))
 
@@ -149,7 +150,15 @@ router.get('/gamez', (req, res) => {
 })
 
 router.get('/calendar', (req, res) => {
-  res.render('./templates/calendar')
+  getCal((err, data) => {
+    if (err) {
+      res.send('unable to save the file').status(500)
+    } else {
+      const year = JSON.parse(data)
+      const month = year.dates.find(peep => peep.id === 6)
+      res.render('./templates/calendar', month)
+    }
+  })
 })
 
 module.exports = router
