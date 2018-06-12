@@ -12,14 +12,15 @@
       "favPets": "Dog's (but I love all really",
       "children": "One day",
       "hobbies": "Driving, computers, building and fixing .. most things, people",
-      "code": "",
+      "code": "if (you === me)  { return infinite love } else {return infinite love anyway }",
       "color": "lilac",
       "movie": "",
       "music": "All music depending on the required mood",
       "website": "https://sam-by-name.github.io/",
-      "personal": "Live Life, Love Life, make lemonade",
-      "banner": "",
-      "background": ""
+      "banner": "https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.thewallpapers.org%2Fphoto%2F36328%2Fblue-fractals.jpg&f=1",
+      "Lbanner": "",
+      "Rbanner": "",
+      "Botbanner": ""
     },
     {
       "id": 2,
@@ -40,7 +41,9 @@
       "website": "",
       "personal": "INFP/Pisces/Griffindor",
       "banner": "",
-      "background": ""
+      "Lbanner": "",
+      "Rbanner": "",
+      "Botbanner": ""
     },
     {
       "id": 3,
@@ -61,7 +64,9 @@
       "website": "Net-a-porter",
       "personal": "I'm adopted",
       "banner": "http://mixmag.net/assets/uploads/images/_fullX2/KENDRICK-LAMAR-NEW.jpg",
-      "background": ""
+      "Lbanner": "",
+      "Rbanner": "",
+      "Botbanner": ""
     },
     {
       "id": 4,
@@ -82,7 +87,9 @@
       "website": "Instagram",
       "personal": "",
       "banner": "",
-      "background": ""
+      "Lbanner": "",
+      "Rbanner": "",
+      "Botbanner": ""
     },
     {
       "id": 5,
@@ -103,7 +110,9 @@
       "website": "Audio Visual Animation Sites",
       "personal": "Driven and resourceful",
       "banner": "",
-      "background": ""
+      "Lbanner": "",
+      "Rbanner": "",
+      "Botbanner": ""
     },
     {
       "id": 6,
@@ -113,7 +122,7 @@
       "age": "21",
       "sauce": "Sweet Sauce",
       "preferedP": "He, him, they them ",
-      "mantr": " attempting the most positive impact possible while trying to figure out what that means",
+      "mantra": " attempting the most positive impact possible while trying to figure out what that means",
       "favPets": "Crazy Students",
       "children": "2",
       "hobbies": "Code, trail running",
@@ -123,7 +132,30 @@
       "music": "",
       "website": "",
       "banner": "",
-      "background": ""
+      "Lbanner": "",
+      "Rbanner": "",
+      "Botbanner": ""
+    },
+    {
+      "id": 7,
+      "name": "John the Punisher",
+      "image": "https://i.imgur.com/jajWPT0.jpg",
+      "short": "Killa",
+      "age": "",
+      "sauce": "",
+      "preferedP": "",
+      "mantr": "",
+      "favPets": "",
+      "children": "",
+      "hobbies": "",
+      "code": "",
+      "color": "",
+      "movie": "",
+      "music": "",
+      "website": "",
+      "Lbanner": "",
+      "Rbanner": "",
+      "Botbanner": ""
     }
   ]
 }

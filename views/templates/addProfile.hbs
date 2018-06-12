@@ -1,8 +1,8 @@
-{{> cohort-nav}} 
+{{> nav}} 
 
 <div class="addProf">
 
-  <form action="/add" method="post">
+  <form action="/mamaku/add" method="post">
     <input placeholder="Name" type="text" name="name">
     <input placeholder="Profile picture \"URL!!!\"" type="text" name="image">
     <input placeholder="Nickname" type="text" name="short">
@@ -20,7 +20,9 @@
     <input placeholder="Most visited website" type="text" name="website">
     <input placeholder="Enter card details here" type="text" name="money">
     <input placeholder="Banner picture \"URL!!!\"" type="text" name="banner">
-    <input placeholder="Background picture \"URL!!!\"" type="text" name="background">
+    <input placeholder="Left banner \"URL!!!\"" type="text" name="Lbanner">
+    <input placeholder="Right banner \"URL!!!\"" type="text" name="Rbanner">
+    <input placeholder="Bottom banner \"URL!!!\"" type="text" name="Botbanner">
     
     <input type="submit" name="" value="Submit">
   </form>

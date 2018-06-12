@@ -1,6 +1,6 @@
-{{> cohort-nav}} 
+{{> nav}}
 <div class="addProf">
-<form action="/edit/{{id}}" method="post">
+<form action="/mamaku/profile{{id}}/edit" method="post">
 <label for="name" class="form-item">Name: <input value="{{name}}"type="text" name="name" ></label>
 <label for="image" class="form-item">Image: <input value="{{image}}"type="text" name="image" ></label>
 <label for="short" class="form-item">NickName:  <input value="{{short}}"type="text" name="short" ></label>
@@ -17,7 +17,9 @@
 <label for="music" class="form-item">Music:  <input value="{{music}}"type="text" name="music" ></label>
 <label for="website" class="form-item">Website:  <input value="{{website}}"type="text" name="website" ></label>
 <label for="banner" class="form-item">banner:  <input value="{{banner}}"type="text" name="banner" ></label>
-<label for="background" class="form-item">background:  <input value="{{background}}"type="text" name="background" ></label>
+<label for="Lbanner" class="form-item">Lbanner:  <input value="{{Lbanner}}"type="text" name="Lbanner" ></label>
+<label for="Rbanner" class="form-item">Rbanner:  <input value="{{Rbanner}}"type="text" name="Rbanner" ></label>
+<label for="Botbanner" class="form-item">Botbanner:  <input value="{{Botbanner}}"type="text" name="Botbanner" ></label>
 <input type="submit" name="" value="Submit">
 </form>
 </div>
