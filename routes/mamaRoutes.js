@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
       res.send('unable to read data file').status(500)
     } else {
       const peeps = JSON.parse(data)
-      res.render('./templates/mamaku', peeps)
+      res.redirect('./templates/mamaku', peeps)
     }
   })
 })
