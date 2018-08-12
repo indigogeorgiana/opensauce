@@ -1,8 +1,15 @@
-# open-sauce
+## OPEN SAUCE
 
-!(https://slack-files.com/T02SQPVAC-FC6GTC78R-66ca404822)
+## THE PLANNING
 
-MVP
+
+![wireframeopen](https://user-images.githubusercontent.com/36146995/44001211-e86fed8c-9e81-11e8-9c08-890b63ea63e5.jpg)
+
+## THE FINAL INTERFACE
+
+
+
+## MVP
 
 1. Get together with your 'Dragon' project team to collaborate and design a project to be completed 
    at 4:30pm Friday 8th June 2018. Don and Emily to approve scope of your project.
@@ -35,3 +42,5 @@ You might like to cover:
 What project is (told + demo'd)
 Learning objectives
 Challenges and learnings
+
+
