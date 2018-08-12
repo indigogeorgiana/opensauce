@@ -1,5 +1,7 @@
 # open-sauce
 
+!(https://slack-files.com/T02SQPVAC-FC6GTC78R-66ca404822)
+
 MVP
 
 1. Get together with your 'Dragon' project team to collaborate and design a project to be completed 
